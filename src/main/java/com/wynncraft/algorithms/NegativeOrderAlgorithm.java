@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Information(name = "NegativeOrderAlgorithm", version = 1, authors = "RedLogic")
+@Information(name = "Negative Order", version = 1, authors = "RedLogic")
 public class NegativeOrderAlgorithm implements IAlgorithm<WynnPlayer> {
 
     private static final SkillPoint[] SKILL_POINTS = SkillPoint.values();
@@ -189,4 +189,5 @@ public class NegativeOrderAlgorithm implements IAlgorithm<WynnPlayer> {
             return new Result(valid, invalid);
         }
     }
+
 }

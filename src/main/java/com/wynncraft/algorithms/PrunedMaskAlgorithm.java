@@ -70,7 +70,7 @@ import java.util.List;
  * pre-allocated as instance fields and reused across calls, keeping per-invocation
  * heap allocation to the two result {@link java.util.ArrayList}s only.
  */
-@Information(name = "PrunedMask", version = 1, authors = "kmaxi")
+@Information(name = "Pruned Mask", version = 1, authors = "kmaxi")
 public class PrunedMaskAlgorithm implements IAlgorithm<WynnPlayer> {
 
     private static final int MAX_ITEMS = 64;

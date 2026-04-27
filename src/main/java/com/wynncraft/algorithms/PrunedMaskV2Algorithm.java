@@ -70,7 +70,7 @@ import java.util.List;
  * pre-allocated as instance fields and reused across calls, keeping per-invocation
  * heap allocation to the two result {@link java.util.ArrayList}s only.
  */
-@Information(name = "PrunedMask Edit", version = 2, authors = "kmaxi & patrick")
+@Information(name = "Pruned Mask", version = 2, authors = "kmaxi & patrick")
 public class PrunedMaskV2Algorithm implements IAlgorithm<WynnPlayer> {
 
     private static final int MAX_ITEMS = 64;
@@ -341,20 +341,9 @@ public class PrunedMaskV2Algorithm implements IAlgorithm<WynnPlayer> {
         sp[4] += delta[4];
     }
 
-//    private void sortByNetBonusDesc(int[] idx, int size) {
-//        for (int i = 1; i < size; i++) {
-//            int entry = idx[i];
-//            int entryBonus = itemBonus[entry];
-//            int j = i - 1;
-//            while (j >= 0 && itemBonus[idx[j]] < entryBonus) {
-//                idx[j + 1] = idx[j--];
-//            }
-//            idx[j + 1] = entry;
-//        }
-//    }
-
     /** sp[k] -= delta[k] for all k. */
     private static void subSP(int[] sp, int[] delta) {
         for (int k = 0; k < SP_COUNT; k++) sp[k] -= delta[k];
     }
+
 }
